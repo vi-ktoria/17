@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт-галерея</title>
+    <link rel="stylesheet" href="17style.css">
+    <script src="17script.js" defer></script>
+</head>
+<body>
+    <div class="add-form">
+        <input id="artifact-title" class="input" placeholder="Название">
+        <input id="artifact-category" class="input" placeholder="Категория">
+        <input id="artifact-image" class="input" placeholder="URL изображения">
+        <button id="add-btn" class="btn">Добавить артефакт</button>
+    </div>
+    
+    <div id="error-banner" class="error-banner">
+        Заполните обязательные поля (название и категория)
+        <button id="close-banner" class="close-banner">×</button>
+    </div>
+    
+    <div id="counter" class="counter">Всего артефактов: 0</div>
+    
+    <button id="theme-toggle" class="theme-btn">Темная тема</button>
+    
+    <div id="gallery" class="gallery">
+        <input id="artifact-filter" class="filter" placeholder="Фильтр по категории">
+        <div id="category-tabs" class="category-tabs"></div>
+    </div>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <button id="modal-close" class="modal-close">×</button>
+            <h2 id="modal-title"></h2>
+            <img id="modal-image" class="modal-image">
+            <p><strong>Категория:</strong> <span id="modal-category"></span></p>
+            <p><strong>Дата добавления:</strong> <span id="modal-date"></span></p>
+        </div>
+    </div>
+</body>
+</html>
